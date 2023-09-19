@@ -18,6 +18,7 @@ spec:
         - name: container
           image: >-
             image-registry.openshift-image-registry.svc:5000/openshift/httpd:latest
+            imagePullPolicy: IfNotPresent
           ports:
             - containerPort: 8080
               protocol: TCP
