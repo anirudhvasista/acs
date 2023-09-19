@@ -17,7 +17,7 @@ spec:
       containers:
         - name: container
           image: >-
-            image-registry.openshift-image-registry.svc:5000/openshift/httpd:latest
+            docker.io/library/httpd:latest
             imagePullPolicy: IfNotPresent
           ports:
             - containerPort: 8080
